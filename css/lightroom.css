@@ -36,10 +36,10 @@ li a, li span{
    
     width: 85%;
     margin: auto;
-    min-width:70vh;
+    /* min-width:70vh; */
     min-height: 100vh;
     background-color: rgb(35, 33, 33);
-    display: grid;
+    /* display: grid; */
     gap: 10px;
     grid-template-columns: 5fr 3fr;
     padding: 50px;
@@ -50,6 +50,7 @@ li a, li span{
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     -webkit-filter: saturate();
+    
 }
 .pic{
     
@@ -63,24 +64,28 @@ li a, li span{
 }
 
 .upload{
-    width: 100px;
+    /* width: 100px; */
     text-align: center;
-    padding: 10px 20px;
-    cursor: pointer;
+   
     border-radius:5px ;
-    background-color: chocolate;
+    /* background-color: chocolate; */
     margin: 70px auto ;
-    -webkit-border-radius:5px ;
-    -moz-border-radius:5px ;
-    -ms-border-radius:5px ;
-    -o-border-radius:5px ;
+    
 }
 .upload:hover{
     background-color: blueviolet;
 }
 .upload label{
-   cursor: pointer;
-    
+    cursor: pointer;
+    background-color: chocolate;
+    font-size: xx-large;
+    padding: 20px 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .upload input{
     display: none;
@@ -89,14 +94,14 @@ li a, li span{
 
 .pic img,canvas{
     max-width: 45vw;
-    max-height: 60vh;
+    /* max-height: 60vh; */
 }
 .filters ul, li{
     direction: rtl;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 80%;
+    /* height: 80%; */
 }
 .filters  li{
     gap: 25px;
@@ -120,7 +125,7 @@ li span{
     background-color: brown;
 }
 
-@media screen and (max-width :650px) {
+@media screen and ( max-width :650px) {
     .containers{
         display: flex;
         flex-direction: column;
@@ -146,6 +151,7 @@ li span{
     }
     .upload{
         margin: 70px auto !important;
+        width: 150px;
     }
     #download{
         display: flex;
