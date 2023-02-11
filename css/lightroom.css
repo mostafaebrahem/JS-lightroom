@@ -1,0 +1,130 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+   
+    background-color: darkgrey;
+}
+li a:hover, li #Reset:hover{
+    background-color: blueviolet !important;
+
+
+}
+li a{
+    text-decoration: none;
+    color: bisque;
+}
+li a, li span{
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.container{
+   
+    width: 85%;
+    margin: auto;
+    min-width:70vh;
+    background-color: rgb(35, 33, 33);
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 5fr 3fr;
+    padding: 50px;
+    border-radius: 5px;
+    color: aliceblue;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-filter: saturate();
+}
+.pic{
+    
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.upload{
+    width: 100px;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius:5px ;
+    background-color: chocolate;
+    margin: auto ;
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+}
+.upload:hover{
+    background-color: blueviolet;
+}
+.upload label{
+   cursor: pointer;
+    
+}
+.upload input{
+    display: none;
+    
+}
+
+.pic img,canvas{
+    max-width: 45vw;
+    max-height: 60vh;
+}
+.filters ul, li{
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+}
+.filters  li{
+    gap: 25px;
+}
+.filters  ul{
+    gap: 20px;
+    margin-top: 50px;
+}
+.filters li:last-child{
+    
+    flex-direction: row;
+    margin-top: 10px;
+}
+.filters li:last-child a ,span{
+
+    border: none;
+    padding: 10px 20px;
+    background-color: green;
+}
+li span{
+    background-color: brown;
+}
+
+@media screen and (max-width :650px) {
+    .container{
+        width: 80%;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .pic ,canvas{
+        margin: auto;
+        text-align: center;
+        padding-bottom: 30px;
+       
+    }
+    .pic img,canvas{
+        max-width: 80vw;
+    }
+}
