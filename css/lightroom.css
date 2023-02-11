@@ -3,6 +3,13 @@
     margin: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+
+}
 body{
    
     background-color: darkgrey;
@@ -25,11 +32,12 @@ li a, li span{
     -o-border-radius: 5px;
 }
 
-.container{
+.containers{
    
     width: 85%;
     margin: auto;
     min-width:70vh;
+    min-height: 100vh;
     background-color: rgb(35, 33, 33);
     display: grid;
     gap: 10px;
@@ -61,7 +69,7 @@ li a, li span{
     cursor: pointer;
     border-radius:5px ;
     background-color: chocolate;
-    margin: auto ;
+    margin: 70px auto ;
     -webkit-border-radius:5px ;
     -moz-border-radius:5px ;
     -ms-border-radius:5px ;
@@ -113,10 +121,22 @@ li span{
 }
 
 @media screen and (max-width :650px) {
-    .container{
+    .containers{
+        display: flex;
+        flex-direction: column;
         width: 80%;
+        min-height: 100vh;
         grid-template-columns: 1fr;
         gap: 50px;
+    }
+    .pic{
+        width: 100%;
+    }
+    .filters{
+        width: 100%;
+    }
+    .filters li {
+        gap: 0 !important;
     }
     .pic ,canvas{
         margin: auto;
@@ -124,7 +144,17 @@ li span{
         padding-bottom: 30px;
        
     }
+    .upload{
+        margin: 70px auto !important;
+    }
+    #download{
+        display: flex;
+        align-items: center;
+    }
     .pic img,canvas{
         max-width: 80vw;
+    }
+    header{
+        padding: 15px 0px 0px 0px;
     }
 }
