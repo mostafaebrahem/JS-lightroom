@@ -116,7 +116,8 @@ li a, li span{
     margin-top: 10px;
 }
 .filters li:last-child a ,span{
-
+    font-size: xx-large;
+    padding: 20px 50px;
     border: none;
     padding: 10px 20px;
     background-color: green;
